@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'calculator'
+version = '0.0.1'
+authors = [
+  {name = 'Steven Warmelink', email = 's.warmelink@pl.hanze.nl'},
+]
+description = 'calculator app for git workshop.'
+readme = 'README.md'
+requires-python = '>=3.9'
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.distutils.egg_info]
+egg_base = "."  # Move it out of the src directory
